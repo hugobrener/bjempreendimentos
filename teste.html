@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Menu Fixo após Rolagem</title>
+  <style>
+    /* Estilos CSS para o cabeçalho */
+    body {
+      margin: 0;
+      padding: 0;
+    }
+    
+    header {
+      position: relative;
+      height: 100px;
+      background-color: #f8f8f8;
+    }
+
+    .imagem {
+        position: absolute;
+    }
+    
+    .imagem:first-child {
+        scale: 80%;
+        top: 0;
+        left:0;
+        z-index: 1;
+    }
+
+    .imagem:last-child {
+        scale: 60%;
+        top: 180px;
+        left: 40px;
+        z-index: 2;
+    }
+    nav {
+        width: 100vw;
+      position: sticky;
+      top: 0;
+      background-color: #f8f8f8;
+      padding: 20px;
+      z-index: 9999;
+    }
+    
+    nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+    }
+    
+    nav ul li {
+      margin-right: 20px;
+    }
+    
+    /* Estilos CSS para o conteúdo */
+    section {
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 24px;
+    }
+    
+    #sobre {
+      background-color: #f2f2f2;
+    }
+    
+    #servicos {
+      background-color: #d9d9d9;
+    }
+    
+    #galeria {
+      background-color: #c6c6c6;
+    }
+    
+    #contato {
+      background-color: #b3b3b3;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+        <img src="images/cubobranco.png" alt="Imagem 1" class="imagem">
+        <img src="images/cubobranco.png" alt="Imagem 2" class="imagem">
+    </div>
+      
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="#sobre">Sobre</a></li>
+      <li><a href="#servicos">Serviços</a></li>
+      <li><a href="#galeria">Galeria de Fotos</a></li>
+      <li><a href="#contato">Contato</a></li>
+    </ul>
+  </nav>
+
+  <section id="sobre">
+    <h2>Sobre</h2>
+    <p>Conteúdo da seção Sobre...</p>
+  </section>
+
+  <section id="servicos">
+    <h2>Serviços</h2>
+    <p>Conteúdo da seção Serviços...</p>
+  </section>
+
+  <section id="galeria">
+    <h2>Galeria de Fotos</h2>
+    <p>Conteúdo da seção Galeria de Fotos...</p>
+  </section>
+
+  <section id="contato">
+    <h2>Contato</h2>
+    <p>Conteúdo da seção Contato...</p>
+  </section>
+
+  <script>
+    // Código JavaScript para fixar o menu após rolar a página
+    window.addEventListener('scroll', () => {
+      const headerHeight = document.querySelector('header').offsetHeight;
+      const nav = document.querySelector('nav');
+
+      if (window.pageYOffset > headerHeight) {
+        nav.style.position = 'fixed';
+        nav.style.top = '0';
+      } else {
+        nav.style.position = 'sticky';
+        nav.style.top = '';
+      }
+    });
+  </script>
+</body>
+</html>

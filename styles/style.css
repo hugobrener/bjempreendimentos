@@ -1,32 +1,114 @@
-
-
-.sobre {
-    max-width: 100vw;
-    background-color: white;
-    background-size: auto;
-    background-position: 85vw 2vw
+/* Estilos CSS para o cabeçalho */
+body {
+    margin: 0;
+    padding: 0;
 }
 
-h3, p {
-    font-family:'libre baskerville';
-    color: #21419E;
+header {
+    position: relative;
+    height: 150px;
+    background-color: #f8f8f8;
+    display: flex;
     
 }
 
-/* .sobre>h3::after {
-    background-color: #21419E;
-    content: "";
-    position: relative;
-    display: inline-block;
-    width: 200px;
-    height: 2px;
-
-} */
-
-.objetivo {
-    font-size: 1.25em;
-    margin-left: 90px;
-    margin-top: 100px;
-    width: 700px;
+header img {
+    scale: 60%;
 }
 
+header#cubos {
+    position: absolute;
+}
+
+#cubos>img {
+    position: absolute;
+}
+
+#cubos>img:first-child {
+    scale: 40%;
+    rotate: -45deg;
+    top: -530px;
+    left:-310px;
+    z-index: 1;
+}
+
+#cubos>img#cubobranco2{
+    scale: 30%;
+    rotate: -35deg;
+    top: -460;
+    left:-490;
+    z-index: 5;
+}
+
+
+#cubos>img:last-child {
+    scale: 20%;
+    rotate: -35deg;
+    top: -440px;
+    left: -370px;
+    z-index: 6;
+}
+
+#logotipo {
+    scale: 80%;
+    position: relative;
+    margin: 0 auto;
+    z-index: 7;
+    margin-right: 20px;
+    
+}
+
+#logotipo-bjparana {
+    position: relative;
+    scale: 20%;
+    z-index: 7;
+    
+}
+nav {
+    width: 100vw;
+    position: sticky;
+    top: 0;
+    background-color: #21419E;
+    padding: 20px;
+    z-index: 4;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: white;
+}
+
+/* Estilos CSS para as seções */
+section {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+}
+
+#sobre {
+    background-color: #f2f2f2;
+}
+
+#servicos {
+    background-color: #d9d9d9;
+}
+
+#galeria {
+    background-color: #c6c6c6;
+}
+
+#contato {
+    background-color: #b3b3b3;
+}
