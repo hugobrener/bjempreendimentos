@@ -10,27 +10,38 @@
     <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&display=swap" rel="stylesheet">
   </head>
   <body>
-    <header class="d-flex">
+    <header>
       <div id="cubos" class="d-flex">
         <img id="cubobranco1" src="images/cubobranco.png" alt="">
         <img id="cubobranco2" src="images/cubobranco.png" alt="">
         <img id="cubobranco3" src="images/cubobranco.png" alt="">
       </div>
       
-        <img id="logotipo" src="images/bjempreendimenos-logo.png" alt="logotipo bjempreendimentos">
-        <img id="logotipo-bjparana" src="images/bj-logo.png" alt="logotipo bjparana">
+      
+      <img id="logotipo" src="images/bjempreendimenos-logo.png" alt="logotipo bjempreendimentos">
+      <img id="logotipo-bjparana" src="images/bj-logo.png" alt="logotipo bjparana">
+      
       
     </header>  
-    <nav id="menu" >
-      <ul>
-        <li><a href="#sobre">Sobre</a></li>
-        <li><a href="#servicos">Serviços</a></li>
-        <li><a href="#galeria">Galeria de Fotos</a></li>
-        <li><a href="#contato">Contato</a></li>
-      </ul>
+    <nav class="navbar navbar-expand-lg bg-blue">
+      <div class="container-fluid ">
+        
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-center" id="navbarNavAltMarkup">
+          <div class="menu navbar-nav bg-blue">
+            <a class="nav-link   a-hover"  href="#sobre">Sobre</a>
+            <a class="nav-link   a-hover" href="#servicos">Serviços</a>
+            <a class="nav-link   a-hover" href="#galeria">Galeria de Fotos</a>
+            <a class="nav-link   a-hover" href="#contato">Contato</a>
+            
+          </div>
+        </div>
+      </div>
     </nav>
     
-    <section id="sobre" class="logo container-md ">
+    <section id="sobre" class="logo container-fluid ">
       <h2>QUEM SOMOS</h2>
       <p>A BJ Empreendimentos foi criada com o objetivo de realizar obras civis para balanças rodoviárias. Contamos com uma equipe capacitada para oferecer a você, um serviço completo de obras e reformas para balanças de várias marcas. Nossa missão é promover praticidade aos clientes que desejam adquirir ou reformar uma balança rodoviária, oferecendo um serviço completo que vai desde o projeto até a entrega.</p>
     </section>
@@ -58,7 +69,9 @@
       </ul>
     </section>
   
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
-    <script src="js/main.js"></script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js" integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS" crossorigin="anonymous"></script>
+    <!-- <script src="js/main.js"></script> -->
   </body>
 </html>
