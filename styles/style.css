@@ -11,6 +11,7 @@ header {
     background-color: #f8f8f8;
     display: flex;
     justify-content: center;
+    width: 100%;
     
 }
 
@@ -48,7 +49,7 @@ img#cubobranco3 {
 
 #logotipo-bjparana {
     scale: 40%;
-    transform: translate(250%, 0);    
+    
 }
 
 
@@ -101,9 +102,12 @@ section p {
 #sobre {
     color: #21419E;
     position: relative;
-    overflow: hidden;
     margin: 80px 100px;
     padding-bottom: 60px;
+}
+
+#sobre>h2 {
+    font-weight: bold;
 }
 
 
@@ -135,9 +139,18 @@ section p {
     overflow: hidden;
 }
 
-.foto-servico {
+/* .foto-servico {
     scale: 50%;
     width: 100%;
+    object-fit: cover;
+}
+.turnkey {
+    width: 100%;
+    object-fit: cover;
+} */
+
+.slide-servico {
+    
     object-fit: cover;
 }
 

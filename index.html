@@ -14,14 +14,14 @@
     <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&display=swap" rel="stylesheet">
   </head>
   <body>
-    <header>
+    <header class="container-fluid">
       <div id="cubos"class="col-4 d-flex">
         <img id="cubobranco1" src="images/cubobranco.png" alt="">
         <img id="cubobranco2" src="images/cubobranco.png" alt="">
         <img id="cubobranco3" src="images/cubobranco.png" alt="">
       </div>
-      <div class="col-4 d-flex align-items-center"><img id="logotipo" src="images/bjempreendimenos-logo.png" alt="logotipo bjempreendimentos"></div>
-      <div class="col-4 d-flex align-items-center"><img id="logotipo-bjparana" src="images/bj-logo.png" alt="logotipo bjparana"></div>
+      <div class="col-4 d-flex align-items-center justify-content-center"><img id="logotipo" src="images/bjempreendimenos-logo.png" alt="logotipo bjempreendimentos"></div>
+      <div class="col-4 d-flex align-items-center justify-content-end"><img id="logotipo-bjparana" src="images/bj-logo.png" alt="logotipo bjparana"></div>
     </header>  
     <nav class="navbar navbar-expand-lg ">
       <div class="container-fluid justify-content-end menu-mobile">
@@ -42,11 +42,11 @@
     </nav>
     
     <section id="sobre" class=" container-fluid d-block bg-white">
+      <h2 class=" col-4 my-5 ">A empresa</h2>
       <div>
-        <h2 class=" col-4 my-5 ">QUEM SOMOS</h2>
-        <p class="col-8 mb-5">A BJ Empreendimentos foi criada com o objetivo de realizar obras civis para balanças rodoviárias. Contamos com uma equipe capacitada para oferecer a você, um serviço completo de obras e reformas para balanças de várias marcas. Nossa missão é promover praticidade aos clientes que desejam adquirir ou reformar uma balança rodoviária, oferecendo um serviço completo que vai desde o projeto até a entrega.</p>
+        <p class="col-8 mb-5">A BJ Empreendimentos atua desde 2022 com o objetivo de realizar obras civis para balanças rodoviárias. Contamos com uma equipe composta por profissionais capacitados para oferecer a você, um serviço completo de obras e reformas para balanças das mais variadas marcas.</p>
       </div>
-      <h2 class="col-4">Nossa missão</h2>
+      <h2 class="col-4 my-5">Nossa missão</h2>
       <p class="col-8 ">Promover praticidade aos clientes que desejam adquirir ou reformar uma
         balança rodoviária, oferecendo um serviço completo que vai desde o
         projeto até a entrega.</p>
@@ -56,24 +56,60 @@
       </div>
     </section>
     <section id="servicos" class="container d-block bg-white my-5">
+      <h2 class="my-5">SERVIÇOS</h2>
       <div class="d-flex">
-        <div class="col-4">
-          <h2 class="my-5">SERVIÇOS</h2>
-          <ul >
-            <li>Obra Civil + Balança</li>
-            <li>Reformas e Aumento de Capacidade</li>
-            <li>Obra Civil sem Balança</li>
-          </ul>
+        <div class=" container">
+          <h3>Obra Civil + Balança</h3>
+          <p>O modelo TURN KEY (chave na mão) consiste em uma obra completa, sendo obra civil com a balança rodoviária da marca Balanças Jundiaí fornecida pela empresa BJ Paraná, oficina autorizada.</p> 
         </div>
-        <div class=" foto-servico col-4 d-flex">
+        <!-- <div class=" foto-servico col-4 d-flex">
           <div class="m-4">
             <img id="img-1"class="turnkey" src="images/image1.png" alt="">
           </div>
-          <div >
+          <div class="d-block container">
             <img id="img-2"class="turnkey" src="images/image2.jpeg" alt="">
             <img id="img-3"class="turnkey" src="images/image3.jpeg" alt="">
             <img id="img-4"class="turnkey" src="images/image4.jpeg" alt="">
           </div>
+        </div> -->
+        
+      </div>
+      <div class="d-flex container align-items-center justify-content-around">
+        <div class="col-4">
+          <p>Este serviço inclui:</p>
+          <ul>
+            <li>Projeto</li>
+            <li>Materiais</li>
+            <li>Mão de obra</li>
+            <li>Transporte</li>
+            <li>Montagem</li>
+            <li>Aterramento</li>
+            <li>ART</li>
+          </ul>
+        </div>
+        <div id="carouselExampleFade" class="w-50 carousel slide carousel-fade">
+          <div class="carousel-inner">
+            <div class="carousel-item active slide-servico">
+              <img src="images/2.png" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item slide-servico">
+              <img src="images/3.png" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item slide-servico">
+              <img src="images/5.png" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item slide-servico">
+              <img src="images/6.png" class="d-block w-100" alt="...">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
         </div>
       </div>
     </section>
