@@ -139,20 +139,45 @@ section p {
     overflow: hidden;
 }
 
-/* .foto-servico {
-    scale: 50%;
-    width: 100%;
-    object-fit: cover;
+.servico-lista {
+    list-style-type: none;
+    padding: 0;
 }
-.turnkey {
-    width: 100%;
-    object-fit: cover;
-} */
 
-.slide-servico {
-    
+  
+.servico-lista li {
+    position: relative;
+    padding-left: 30px; /* Espaçamento para o cubo */
+    margin-bottom: 10px;
+}
+  
+.servico-lista li::before , .servico-lista li::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 6px;
+    width: 14px;
+    height: 14px;
+    background-color: blue;
+    border-radius: 2px;
+    transform: rotateX(45deg) rotateY(45deg);
+    transform-origin: center center;
+}
+  
+#img-1 {
+    max-width: 360px;
+    height: 571px;
     object-fit: cover;
 }
+
+
+.turnkey {
+    max-width: 310px;
+    object-fit: cover;
+    margin: 10px auto;
+}
+
+
 
 #galeria {
     color: #21419E;
